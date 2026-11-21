@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<title>歪歪漫画网 | 正版高清漫画阅读平台 | 连载新作极速更新</title>
+<meta name="keywords" content="歪歪漫画网,歪歪漫画网 正版高清漫画,歪歪漫画网 最新连载查询,歪歪漫画网 免费在线阅读入口,歪歪漫画网 热门漫画排行榜,歪歪漫画网 漫画作者资料查询,歪歪漫画网 按题材筛选韩漫国漫日漫,歪歪漫画网 完结漫画推荐,歪歪漫画网 校园恋爱漫画合集,歪歪漫画网 奇幻冒险漫画精选,歪歪漫画网 都市悬疑漫画速查,歪歪漫画网 漫画更新与连载提醒">
+<meta name="description" content="歪歪漫画网聚合韩漫、国漫、日漫及多种题材，提供作品简介、人物设定与更新信息。首页推荐连载与完结佳作，帮助读者快速发现感兴趣的漫画。更新及时，分类清晰，适合全年龄阅读。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="歪歪漫画网">
+<meta property="og:title" content="一个把题材、连载进度与完结作品都摆在明面上的漫画阅读站">
+<meta property="og:description" content="从校园恋爱到都市悬疑，从韩漫到日漫，读者可以先看简介与人物设定，再决定追更还是等完结后一口气读完。">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="歪歪漫画网：题材分类清楚的在线漫画阅读平台">
+<meta name="twitter:description" content="榜单、更新提醒与作者资料集中在一处，减少在不同页面之间来回跳转查找的麻烦。">
+<meta name="theme-color" content="#1b1f3b">
+<style>
+:root{--ink:#1b1f3b;--ink-2:#3a3f63;--muted:#6b7192;--line:#e3e6f0;--bg:#f6f7fb;--card:#ffffff;--accent:#e0455f;--accent-2:#f5a623;--ok:#2f9e6f;--radius:14px;--shadow:0 6px 24px rgba(27,31,59,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:99}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:18px;color:var(--ink);white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand .dot{width:12px;height:12px;border-radius:4px;background:var(--accent);display:inline-block}
+.nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto}
+.nav a{padding:7px 12px;border-radius:999px;color:var(--ink-2);font-size:14.5px;white-space:nowrap}
+.nav a:hover{background:#eef0f8;text-decoration:none}
+.nav a.active{background:var(--ink);color:#fff}
+.hero{padding:64px 0 44px;background:radial-gradient(900px 320px at 12% 0%,#ffe9ee 0%,rgba(255,233,238,0) 62%),radial-gradient(760px 300px at 92% 10%,#e8edff 0%,rgba(232,237,255,0) 60%),#fff;border-bottom:1px solid var(--line)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.35;letter-spacing:.2px}
+.hero .lead{margin:0 0 22px;color:var(--ink-2);font-size:17px;max-width:760px}
+.tagline{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px;padding:0;list-style:none}
+.tagline li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:13.5px;color:var(--ink-2);box-shadow:0 2px 6px rgba(27,31,59,.04)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;font-size:15px}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(224,69,95,.28)}
+.btn-primary:hover{background:#c93b54;text-decoration:none}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);text-decoration:none}
+section{padding:52px 0}
+section:nth-of-type(even){background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:25px;margin:0 0 8px;line-height:1.4}
+h3{font-size:18px;margin:0 0 8px}
+.sub{margin:0 0 26px;color:var(--muted);font-size:15px}
+p{margin:0 0 14px}
+.grid{display:grid;gap:16px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card p:last-child{margin-bottom:0}
+.card .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:1px;color:var(--accent);font-weight:700;margin-bottom:8px}
+.chip{display:inline-block;padding:3px 10px;border-radius:8px;font-size:12.5px;background:#f0f2fa;color:var(--ink-2);margin:0 6px 6px 0}
+.chip.hot{background:#ffe9ee;color:#b83049}
+.chip.done{background:#e8f6ef;color:var(--ok)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:15px}
+caption{caption-side:top;text-align:left;color:var(--muted);font-size:13.5px;padding-bottom:10px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f2f4fb;font-weight:600;font-size:14px;color:var(--ink)}
+tr:last-child td{border-bottom:none}
+td .rank{display:inline-block;width:24px;height:24px;line-height:24px;text-align:center;border-radius:8px;background:var(--ink);color:#fff;font-size:13px;margin-right:6px}
+ol.steps{margin:0;padding-left:22px}
+ol.steps li{margin-bottom:10px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;font-size:15.5px;list-style:none;position:relative;padding-right:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:14px;color:var(--accent);font-size:19px;font-weight:700}
+.faq details[open] summary::after{content:"\2212"}
+.faq .ans{padding:0 20px 18px;color:var(--ink-2);font-size:15px;border-top:1px dashed var(--line);margin-top:-1px;padding-top:14px}
+.note{background:#fff8e9;border:1px solid #f3e0b8;border-radius:12px;padding:16px 18px;font-size:14.5px;color:#7a5a12}
+.sla{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.sla div{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.sla strong{display:block;font-size:22px;color:var(--accent);line-height:1.2;margin-bottom:4px}
+.sla span{font-size:13.5px;color:var(--muted)}
+footer{background:var(--ink);color:#c9cee6;padding:38px 0 26px;font-size:14px}
+footer a{color:#fff}
+footer .fnav{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 16px;padding:0;list-style:none}
+footer .fnav a{color:#c9cee6}
+footer p{margin:0 0 8px;color:#98a0c4}
+#toTop{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:12px;border:none;background:var(--ink);color:#fff;font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:.25s;box-shadow:var(--shadow)}
+#toTop.show{opacity:1;pointer-events:auto}
+@media(max-width:860px){.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.hero h1{font-size:26px}.nav{display:none}table{font-size:14px}}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot"></span>歪歪漫画网</a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#intro">平台介绍</a>
+      <a href="#genre">题材分类</a>
+      <a href="#rank">榜单</a>
+      <a href="#update">更新提醒</a>
+      <a href="#guide">阅读指南</a>
+      <a href="#author">作者资料</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <h1>歪歪漫画网：把题材、进度和完结状态一次讲清楚的高清漫画阅读平台</h1>
+    <p class="lead">找漫画最耗时间的环节，往往不是阅读本身，而是在大量页面之间反复翻找：这部作品讲什么、画风如何、更新到第几话、是不是已经完结、作者还画过什么。歪歪漫画网把这些信息集中呈现在同一处，读者打开页面就能判断要不要开始看，把时间留给真正的阅读。</p>
+    <ul class="tagline">
+      <li>正版高清画质</li>
+      <li>连载新作极速更新</li>
+      <li>作品简介与人物设定</li>
+      <li>按题材精准筛选</li>
+      <li>完结作品一次读完</li>
+      <li>全年龄阅读</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#rank">先看热门榜单</a>
+      <a class="btn btn-ghost" href="#genre">按题材筛选作品</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="wrap">
+    <h2>平台介绍：从"能不能看"到"值不值得看"</h2>
+    <p class="sub">一个免费漫画在线阅读入口，应该先回答清楚作品是什么，再谈怎么读。</p>
+    <p>歪歪漫画网定位为一个聚合型的漫画阅读平台，内容覆盖韩漫、国漫、日漫三大来源，并把校园恋爱、奇幻冒险、都市悬疑、热血战斗、治愈日常等常见题材单独拆出入口。与只按更新时间罗列作品的页面不同，这里在每部作品下都会给出内容简介、人物设定和当前连载状态，让读者在点开第一章之前就对故事走向有基本预期。</p>
+    <p>对于习惯长期追更的读者，平台把连载新作与完结作品分开陈列。连载区强调更新节奏，完结区强调完整性，两类需求互不干扰。需要说明的是，本站展示的是作品信息与阅读入口的整理结果，具体的作品版权与授权状态以各作品的说明页为准，读者在阅读时请支持正版渠道。</p>
+    <div class="grid grid-3" style="margin-top:26px">
+      <article class="card">
+        <span class="eyebrow">画质与排版</span>
+        <h3>高清长条阅读体验</h3>
+        <p>条漫与页漫分别适配，图片按屏幕宽度等比加载，翻页时不再需要反复缩放。长条模式下章节连续滚动，适合一口气追完一个剧情段落。</p>
+      </article>
+      <article class="card">
+        <span class="eyebrow">信息结构</span>
+        <h3>简介、设定、状态齐全</h3>
+        <p>每部作品提供字数适中的内容简介，主要角色以人物设定条目列出，配合当前更新话数与是否完结的标记，减少误点与弃坑。</p>
+      </article>
+      <article class="card">
+        <span class="eyebrow">检索方式</span>
+        <h3>题材、来源、状态三重筛选</h3>
+        <p>可以按韩漫、国漫、日漫的来源维度筛选，也能叠加题材与完结状态。筛选条件可组合，避免在混杂列表里逐页翻找想要的那一类。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="genre">
+  <div class="wrap">
+    <h2>题材分类：按想看的故事类型直接进入</h2>
+    <p class="sub">分类的意义在于缩短决策时间，这里把高频题材单独拆成可检索的入口。</p>
+    <div class="grid grid-2">
+      <article class="card">
+        <h3>校园恋爱漫画合集</h3>
+        <p>以校园生活为背景，围绕同学关系、社团活动与青春心事展开。节奏通常温和，冲突集中在人际与成长上，适合在通勤或睡前分段阅读。平台在合集内按连载与完结分别排序，方便先挑已完结的作品直接读完。</p>
+        <span class="chip">青梅竹马</span><span class="chip">社团日常</span><span class="chip">毕业告白</span>
+      </article>
+      <article class="card">
+        <h3>奇幻冒险漫画精选</h3>
+        <p>包含异世界、魔法体系、旅途探索等设定，世界观较重，前期需要交代背景。阅读时建议先看人物设定与世界观简介，再进入正文，能明显降低理解成本。精选区会标注作品的世界观规模，便于判断是否为长线连载。</p>
+        <span class="chip">异世界</span><span class="chip">魔法系统</span><span class="chip">队伍冒险</span>
+      </article>
+      <article class="card">
+        <h3>都市悬疑漫画速查</h3>
+        <p>以现实都市为舞台，围绕案件、推理与反转推进。这类作品对连贯性要求高，中途断读容易丢失线索，因此速查页会明确标出已完结与否，以及是否存在分支外传，避免顺序错乱。</p>
+        <span class="chip">案件推理</span><span class="chip">多重反转</span><span class="chip">群像叙事</span>
+      </article>
+      <article class="card">
+        <h3>热血战斗与治愈日常</h3>
+        <p>热血向强调成长与对抗，章节推进感强；治愈向更注重氛围与生活细节，适合情绪需要缓冲时阅读。两类题材都提供话数概览，读者可据此判断是当天追更还是留到周末集中阅读。</p>
+        <span class="chip">成长蜕变</span><span class="chip">团队对抗</span><span class="chip">生活治愈</span>
+      </article>
+    </div>
+    <p class="note" style="margin-top:22px">题材标签存在交叉，一部作品可能同时属于校园恋爱与治愈日常。筛选时可先固定来源（韩漫、国漫或日漫），再叠加题材，结果更贴近真实需求。</p>
+  </div>
+</section>
+
+<section id="rank">
+  <div class="wrap">
+    <h2>连载与完结榜单：两条不同的阅读路线</h2>
+    <p class="sub">追更的人看更新频率与话题度，补番的人看完整度与口碑。以下榜单按线路拆分，仅作阅读参考，排序会随更新情况调整。</p>
+    <div class="grid grid-2">
+      <div>
+        <h3>连载新作榜</h3>
+        <table>
+          <caption>侧重更新稳定性与近期讨论热度</caption>
+          <thead>
+            <tr><th>位次</th><th>作品方向</th><th>入选理由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="rank">1</span></td><td>都市悬疑长篇</td><td>线索铺设密集，更新节奏稳定</td></tr>
+            <tr><td><span class="rank">2</span></td><td>奇幻冒险群像</td><td>世界观扩展快，章节信息量大</td></tr>
+            <tr><td><span class="rank">3</span></td><td>校园恋爱日常</td><td>单话时长短，适合碎片时间</td></tr>
+            <tr><td><span class="rank">4</span></td><td>热血成长向</td><td>战斗分镜解说度较高</td></tr>
+            <tr><td><span class="rank">5</span></td><td>国漫仙侠题材</td><td>设定体系完整，长期连载</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>完结佳作榜</h3>
+        <table>
+          <caption>侧重故事完整度与结局评价</caption>
+          <thead>
+            <tr><th>位次</th><th>作品方向</th><th>入选理由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="rank">1</span></td><td>都市悬疑中篇</td><td>结局回收完整，无明显遗留伏笔</td></tr>
+            <tr><td><span class="rank">2</span></td><td>校园恋爱短篇</td><td>篇幅紧凑，适合一次读完</td></tr>
+            <tr><td><span class="rank">3</span></td><td>韩漫职场写实</td><td>人物弧线清晰，节奏平稳</td></tr>
+            <tr><td><span class="rank">4</span></td><td>日漫奇幻单元剧</td><td>结构独立，任意章节可入</td></tr>
+            <tr><td><span class="rank">5</span></td><td>治愈生活流</td><td>情绪舒展，重读体验稳定</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p style="margin-top:22px">榜单的参考价值在于过滤，而非排名本身。真正的判断依据仍然是简介与人物设定是否对味：同样是悬疑，有人偏爱刑侦线，有人偏爱心理线，这类差异只有读简介才能分辨。</p>
+  </div>
+</section>
+
+<section id="update">
+  <div class="wrap">
+    <h2>更新与连载提醒：把追更改成被动接收</h2>
+    <p class="sub">"追更"最怕两件事：不知道更新了没，以及更新了但顺序乱了。提醒机制围绕这两点设计。</p>
+    <p>平台为正在追更的作品提供更新提醒设置。开启后，作品发布新章节时会在站内提醒列表中出现提示，包含作品名、话数与更新时间，读者按提醒条目进入即可定位到最新章节，不需要在作品列表里重新翻找。对于同时追多部作品的读者，提醒列表按时间倒序排列，一眼可以看出今天有哪些更新。</p>
+    <div class="sla">
+      <div><strong>连载区</strong><span>按更新时间倒序，新章节优先展示</span></div>
+      <div><strong>完结区</strong><span>按完整度与口碑排列，适合集中补读</span></div>
+      <div><strong>提醒列表</strong><span>记录已追作品的最新话数与时间</span></div>
+    </div>
+    <h3 style="margin-top:30px">连载状态怎么看</h3>
+    <ol class="steps">
+      <li>作品页顶部显示当前状态：连载中、休刊或已完结，状态变化会同步到列表页。</li>
+      <li>"连载中"作品会标注最近一次更新时间，若距上次更新已有一段时间，说明可能处于休整期。</li>
+      <li>"已完结"作品会注明总话数，方便判断是短篇一夜读完，还是长篇需要分周推进。</li>
+      <li>部分作品存在外传或番外，作品页会单独列出，建议按正篇、番外的顺序阅读，避免时间线错位。</li>
+    </ol>
+    <p class="note">提醒功能仅用于站内消息提示，不涉及任何形式的付费解锁。若发现提醒长期未更新，可先在作品页确认是否为休刊状态，再考虑是否继续等待。</p>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <h2>阅读指南：新读者上手四步</h2>
+    <p class="sub">第一次进入平台时，按下面顺序操作，通常比漫无目的浏览更省时间。</p>
+    <ol class="steps">
+      <li><strong>先定来源。</strong>韩漫、国漫、日漫在叙事节奏与画面切分上差异明显。习惯短章节快节奏的读者可先从韩漫、国漫进入，偏好单元剧与长篇设定的读者可以从日漫区开始。</li>
+      <li><strong>再选题材。</strong>在来源基础上叠加题材，比如"国漫 + 都市悬疑"或"日漫 + 治愈日常"。叠加后的结果数量适中，翻完一屏就能形成判断。</li>
+      <li><strong>读简介与人物设定。</strong>不要跳过这一段。简介决定故事是否对味，人物设定决定你能不能记住角色关系，后者在群像作品里尤其重要。</li>
+      <li><strong>决定追更还是补完结。</strong>如果作品仍在连载且更新稳定，加入提醒列表即可；如果已经完结或接近尾声，直接进入第一章连续阅读，体验更完整。</li>
+    </ol>
+    <div class="grid grid-2" style="margin-top:26px">
+      <article class="card">
+        <h3>阅读模式选择</h3>
+        <p>条漫建议使用长条连续滚动，画面衔接更自然；页漫建议使用单页翻页模式，便于控制阅读节奏。两种模式在章节页顶部可以随时切换，切换后会停留在当前进度附近。</p>
+      </article>
+      <article class="card">
+        <h3>阅读进度与续读</h3>
+        <p>同一设备上，平台会记录每部作品的阅读位置。下次进入作品页时可以直接从上次的话数继续，不必重新确认看到哪一章。追更多部作品时建议先看提醒列表，再逐一续读。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="author">
+  <div class="wrap">
+    <h2>作者资料查询：从一部作品找到更多同类</h2>
+    <p class="sub">喜欢一部作品，往往也会喜欢同一位作者的其他作品。作者资料页承担这部分串联作用。</p>
+    <p>在作品页的作者信息处可以进入作者资料页，页面汇总该作者的已知作品列表、主要题材倾向与代表作。对于连载中的作者，还会标出当前正在更新的作品，方便读者把同一位作者的多部作品一起加入提醒。相比按题材盲找，从作者维度延伸阅读，风格稳定性通常更高。</p>
+    <div class="grid grid-3">
+      <article class="card"><h3>作品串联</h3><p>同一作者的长篇与短篇会并列展示，并注明是否为同一世界观的续作或外传。</p></article>
+      <article class="card"><h3>风格标注</h3><p>根据已有作品归纳作者常见的叙事节奏与画面倾向，帮助读者判断是否符合个人偏好。</p></article>
+      <article class="card"><h3>更新跟踪</h3><p>作者有多个连载作品时，资料页会分别标注各自状态，避免只跟进其中一部而漏掉其他。</p></article>
+    </div>
+    <p style="margin-top:20px">需要提醒的是，作者资料以公开可查的信息为准，不同来源对视作、笔名的记载可能存在差异。遇到信息不一致时，以作品页内的正式署名说明为准，资料页仅作辅助参考。</p>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>常见问题</h2>
+    <p class="sub">这里收录读者最常提出的几类疑问，涉及阅读入口、更新节奏、题材筛选与完整度判断。</p>
+    <details open>
+      <summary>还没注册账号，可以直接阅读吗？</summary>
+      <div class="ans">平台的大部分作品简介与人物设定页面无需注册即可浏览。部分作品的章节阅读可能需要登录以获得稳定的阅读进度记录。建议先浏览简介与设定，确认想看的作品后再决定是否登录，避免带着一堆无关记录进来。</div>
+    </details>
+    <details>
+      <summary>作品显示"连载中"，为什么最近没更新？</summary>
+      <div class="ans">连载中的作品可能因作者休整、单行本整理或平台排期而出现间隔。作品页会标注最近一次更新时间，若间隔明显长于该作品平时的更新周期，可以理解为处于休整阶段。此时不必反复刷新，开启提醒后在列表里等待提示即可。</div>
+    </details>
+    <details>
+      <summary>怎么快速找到某一类题材的作品？</summary>
+      <div class="ans">在题材分类区选择来源与题材两个维度，再按需叠加完结状态。三种条件组合后结果会更聚焦。例如先选日漫，再选奇幻冒险，最后限定已完结，通常能在一屏之内看到候选作品。</div>
+    </details>
+    <details>
+      <summary>完结作品和连载作品应该先看哪一类？</summary>
+      <div class="ans">如果时间零散，先看连载作品并配合提醒，每次追几话即可；如果有整块时间且希望有完整结局，优先从完结佳作榜中选择。两类作品在叙事结构上没有高下之分，区别只在于读者对"等待更新"这件事的容忍程度。</div>
+    </details>
+    <details>
+      <summary>阅读时画面显示不完整怎么办？</summary>
+      <div class="ans">多数情况下是阅读模式与作品排版类型不匹配。条漫使用长条滚动，页漫使用单页翻页，切换后通常即可完整显示。若仍存在留白或裁切，可尝试调整浏览器缩放比例到百分之百后再重新进入章节页。</div>
+    </details>
+    <details>
+      <summary>平台与作品版权是什么关系？</summary>
+      <div class="ans">平台对作品信息、题材分类与阅读入口进行整理，具体作品的版权归属与授权情况以作品说明页标注为准。阅读时请支持正版渠道，若权利人认为某处信息需要更正或下线，可通过页面底部的反馈途径提出，平台会核实后处理。</div>
+    </details>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>关于内容与使用说明</h2>
+    <p>歪歪漫画网以整理作品信息为核心：一方面把韩漫、国漫、日漫及各类题材的入口做清晰，另一方面把简介、人物设定、更新状态这类影响阅读决策的信息前置。平台更新的重点在于分类准确与状态同步，而非单纯堆叠数量。</p>
+    <p>本站内容适合全年龄读者浏览，页面不包含诱导性弹窗或强制跳转。若在使用中遇到页面加载异常、分类归属明显错误，或发现某部作品的连载状态与实际不符，欢迎通过反馈渠道告知，便于及时修正。所有分类与榜单均会随作品更新情况周期性调整，不同时间查看结果存在差异属正常现象。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <ul class="fnav">
+      <li><a href="#top">返回顶部</a></li>
+      <li><a href="#intro">平台介绍</a></li>
+      <li><a href="#genre">题材分类</a></li>
+      <li><a href="#rank">连载与完结榜单</a></li>
+      <li><a href="#update">更新与提醒</a></li>
+      <li><a href="#guide">阅读指南</a></li>
+      <li><a href="#author">作者资料</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+    <p>歪歪漫画网 · 正版高清漫画阅读平台，连载与完结作品分类整理，更新及时。</p>
+    <p>页面内容为作品信息与阅读入口的整理展示，作品版权归原作者及相应权利人所有，请支持正版阅读。</p>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var bar=document.getElementById("progress");
+  var topBtn=document.getElementById("toTop");
+  var navLinks=Array.prototype.slice.call(document.querySelectorAll(".nav a"));
+  var sections=Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+  function onScroll(){
+    var doc=document.documentElement;
+    var max=doc.scrollHeight-doc.clientHeight;
+    var y=window.pageYOffset||doc.scrollTop;
+    var pct=max>0?(y/max)*100:0;
+    bar.style.width=pct.toFixed(2)+"%";
+    if(y>320){topBtn.classList.add("show");}else{topBtn.classList.remove("show");}
+    var current="";
+    for(var i=0;i<sections.length;i++){
+      if(sections[i].offsetTop-100<=y){current=sections[i].id;}
+    }
+    for(var j=0;j<navLinks.length;j++){
+      var href=navLinks[j].getAttribute("href");
+      if(href==="#"+current){navLinks[j].classList.add("active");}else{navLinks[j].classList.remove("active");}
+    }
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});
+  window.addEventListener("resize",onScroll);
+  onScroll();
+  topBtn.addEventListener("click",function(){
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+  var details=Array.prototype.slice.call(document.querySelectorAll(".faq details"));
+  details.forEach(function(item){
+    item.addEventListener("toggle",function(){
+      if(item.open){
+        details.forEach(function(other){
+          if(other!==item){other.open=false;}
+        });
+      }
+    });
+  });
+  var anchors=Array.prototype.slice.call(document.querySelectorAll('a[href^="#"]'));
+  anchors.forEach(function(a){
+    a.addEventListener("click",function(e){
+      var id=a.getAttribute("href");
+      if(id.length>1){
+        var target=document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          var offset=target.getBoundingClientRect().top+(window.pageYOffset||document.documentElement.scrollTop)-70;
+          window.scrollTo({top:offset,behavior:"smooth"});
+          if(history.replaceState){history.replaceState(null,"",id);}
+        }
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
